@@ -11,9 +11,6 @@ function reverseWords(s: string): string {
             auxWord = "";
         }
     }
-    auxWord = "";
-    for (let i = 0; i < wordsArray.length; i++) {
-        auxWord += `${wordsArray[wordsArray.length - 1 - i]} `;
-    }
-    return auxWord.trim();
+
+    return wordsArray.reverse().join(" ");
 };
